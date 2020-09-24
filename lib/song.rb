@@ -49,8 +49,7 @@ class Song
    
    def self.new_from_filename(song_and_name)
      #need to use regex to separate song and name string and then create a song.name and song.artist
-     song_name = song_and_name.match(/\A\w+/)
-     song_name.to_s 
+     song_name = song_and_name.match(/\A\w+/).to_s
      puts song_name
      song = self.new
      song.name = song_name
