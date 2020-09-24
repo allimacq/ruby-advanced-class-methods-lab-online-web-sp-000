@@ -69,6 +69,8 @@ class Song
    
    def self.create_from_filename(song_and_name)
      song = self.new_from_filename(song_and_name)
+     p song.class
+     
      p self.find_or_create_by_name(song.name)
      p self.name
   end
