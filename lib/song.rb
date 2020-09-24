@@ -48,24 +48,27 @@ class Song
    end
    
    def self.new_from_filename(song_and_name)
-     #need to use regex to separate song and name string and then create a song.name and song.artist
      #separating song and artist by " - "
      separate = song_and_name.split(" - ")
+     
      #setting the first of the split array to the song artist and turning it into a string
      song_artist = separate[0].to_s
+     
      #since song name still has the .mp3 attached, splitting it again by the "."
      song_name = separate[1].split(".")
+     
      #taking the first of the newly split array and converting it to a string. this is now the song's name
      song_name = song_name[0].to_s
+     
      #now creating our new song
      song = self.new
      song.artist_name = song_artist
      song.name = song_name
      song
-     
    end
    
-   
+   def self.create_from_filename(song_and_name)
+  end
    
 
     
