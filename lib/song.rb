@@ -53,7 +53,7 @@ class Song
      puts song_name
      song = self.new
      song.name = song_name
-     song.name
+     song
      
    end
    
