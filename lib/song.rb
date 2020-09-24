@@ -50,7 +50,7 @@ class Song
    def self.new_from_filename(song_and_name)
      #need to use regex to separate song and name string and then create a song.name and song.artist
      separate = song_and_name.match(/\A\w+ -/)
-     puts separate.is_a?(String)
+     puts separate.is_a?(Array)
      song = self.new
      
    end
