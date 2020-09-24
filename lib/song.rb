@@ -55,7 +55,7 @@ class Song
      p song_artist
      #song_and_name.match(/\A\w+/).to_s
      song_name = separate[1].split(".")
-     puts song_name
+     p song_name
      #song_and_name.match(//).to_s
      #puts song_artist
      song = self.new
