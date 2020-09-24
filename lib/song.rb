@@ -80,11 +80,9 @@ class Song
      #taking the first of the newly split array and converting it to a string. this is now the song's name
      song_name = song_name[0].to_s
      
-     
-     
-     
      #initializing song
      song = self.new
+     song.name = song_name
   end
    
 
