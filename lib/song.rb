@@ -68,9 +68,9 @@ class Song
    end
    
    def self.create_from_filename(song_and_name)
+     #initializing and saving a new song.
      song = self.create
-     #new_from_filename(song_and_name)
-     p song
+     
      #separating song and artist by " - "
      separate = song_and_name.split(" - ")
      
